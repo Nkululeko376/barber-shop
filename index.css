@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(41, 41, 41);
+}
+
+.header-section {
+    width: 85%;
+    height: 400px;
+    background: url(design/f3e24d37faf7feb883850faf90deec09.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding: 50px 50px;
+    filter: grayscale(10%);
+    box-shadow: 0px 3px 5px black;
+    border-radius: 5px;
+}
+
+.loggo-span {
+    font-size: 18px;
+    color: navy;
+    font-weight: 800;
+}
+.bar-icon {
+    font-size: 22px;
+    position: absolute;
+    left: 10px;
+    visibility: hidden;
+}
+.header-second-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    background-color: rgba(72, 72, 72, 0.685);
+    position: fixed;
+    top: 10px;
+    left: 55px;
+    right: 55px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px black, -3px -3px 3px black, 4px 4px 3px navy, -4px -4px 3px white;
+    
+}
+
+.nav-bar {
+    display: flex;
+    padding: 3px 0px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.nav-bar a {
+    margin-right: 30px;
+    color: white;
+}
+
+.hero-section-main {
+    
+    padding: 25px;
+    color: navy;
+    margin-top: 30px;
+}
+.hero-section-main button {
+    padding: 4px 18px;
+    margin-top: 20px;
+    font-size: 15px;
+    border: none;
+    background-color: navy;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+}
+.hero-section-main button:hover {
+    background-color: rgba(0, 0, 128, 0.5);
+}
+
+.hero-section {
+   
+    width: 350px;
+    margin-top: 30px;
+    padding: 15px 5px;
+    border-radius: 10px;
+    background-color: rgba(6, 7, 15, 0.799);
+    box-shadow: 2px 2px 2px black;
+    color: navy;
+}
+.hero-section span {
+    font-size: 2.8em;
+    font-weight: 900;
+    margin-bottom: 0px;
+    line-height: 48px;
+    text-shadow: 5px 3px 3px navy;
+}
+.hero-section h2 {
+    font-size: 2.0em;
+    margin-top: 18px;
+    line-height: 30px;
+    text-shadow: 4px 2px 3px navy;
+}
