@@ -10,6 +10,7 @@ body {
     padding: 50px 0px;
     margin: 0px;
     background-color: rgb(41, 41, 41);
+    background: linear-gradient(to bottom, black, orange, black);
 }
 
 .header-section {
@@ -17,7 +18,7 @@ body {
    
     width: 85%;
     height: 400px;
-    background: url(design/f3e24d37faf7feb883850faf90deec09.jpg);
+    background: url(design/1600w-A5183UnPgkI.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -127,7 +128,9 @@ body {
 
 /*====================Services main section==================*/
 .services-main-section {
-    /*border: 3px solid red;*/
+    /*
+    border: 3px solid red;
+    */
     
     padding: 15px 50px;
     width: 90%;
@@ -235,6 +238,63 @@ body {
     background-color: navy;
 }
 
+
+/*=======================End of service section==================*/
+
+
+
+/*====================Styles of about us section===================*/
+.about-us-main-section {
+    /*border: 3px solid blue;*/
+    
+    padding: 70px 20px;
+    width: 90%;
+    margin: auto;
+    
+}
+
+.about-us-heading {
+    width: 150px;
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    text-shadow: 5px 3px 3px navy;
+}
+
+.about-us-container {
+    /* border: 2px solid green;*/
+   
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.image-div {
+    width: 300px;
+    height: 300px;
+    /*border: 2px solid red;*/
+    
+}
+
+.image-div img {
+    width: 100%;
+}
+.about-us-section {
+    /*border: 2px solid blueviolet;*/
+    
+    width: 45%;
+    padding: 10px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+/*===============End of about section styles==========*/
+
 @media(max-width: 1250px){
     body {
         /* background-color: cyan;*/
@@ -292,7 +352,6 @@ body {
 @media(max-width: 870px){
     body {
         /*background-color: blueviolet;*/
-        
     }
 
     .nav-links {
@@ -310,10 +369,8 @@ body {
     }
     .header-section {
         /*border: 4px solid red;*/
-        
         width: 85%;
         height: 400px;
-        background: url(design/f3e24d37faf7feb883850faf90deec09.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -328,6 +385,7 @@ body {
     body {
         /*background-color: pink;*/
         
+        
     }
     .nav-links {
         font-size: 14px;
@@ -337,6 +395,7 @@ body {
 @media(max-width: 777px){
     body{
         /*background-color: lightseagreen;*/
+        
         
     }
 
@@ -359,13 +418,25 @@ body {
          color: navy;
          margin-top: 30px;
      }
+     
+     .loggo-span {
+        font-size: 16px;
+        color: navy;
+        font-weight: 800;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+ 
 
     
 }
 
 @media(max-width: 700px){
     body {
-        /*background-color: orangered;*/
+        /*background-color: rgba(255, 68, 0, 0.833);*/
+        
         
     }
 
@@ -389,10 +460,8 @@ body {
 
     .header-section {
         /*border: 4px solid red;*/
-        
         width: 85%;
         height: 400px;
-        background: url(design/f3e24d37faf7feb883850faf90deec09.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -404,12 +473,39 @@ body {
 
     .services-main-section {
         /*border: 3px solid green;*/
-        
         padding: 8px;
         width: 90%;
         margin: 30px auto;
         width: 90%;
         border-radius: 5px;
+    }
+
+    .about-us-container {
+        /*border: 2px solid green;*/
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    
+    .image-div {
+        width: 350px;
+        height: 350px;
+        /*border: 2px solid red;*/
+        margin: auto;
+    }
+    
+    .image-div img {
+        width: 100%;
+    }
+    .about-us-section {
+        /*border: 2px solid blueviolet;*/
+        width: 90%;
+        padding: 7px;
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        margin: 20px auto;
     }
 }
 
@@ -435,6 +531,14 @@ body {
         color: navy;
         font-weight: 800;
         margin-left: 80px;
+    }
+
+    .about-us-container {
+        /*border: 2px solid green;*/
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
     }
 }
 
@@ -471,7 +575,7 @@ body {
      }
 }
 
-@media(max-width: 424px){
+@media(max-width: 450px){
     .loggo-span {
         display: none;
     }
