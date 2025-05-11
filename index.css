@@ -14,7 +14,7 @@ body {
 }
 
 .header-section {
-    width: 85%;
+    width: 90%;
     height: 400px;
     background: url(design/1600w-A5183UnPgkI.webp);
     background-position: center;
@@ -26,17 +26,59 @@ body {
     box-shadow: 0px 3px 5px black;
     border-radius: 5px;
 }
-
+/*
 .loggo-span {
     font-size: 18px;
-    color: navy;
+    color: lightseagreen;
     font-weight: 800;
     margin-left: 15px;
     margin-right: 200px;
-    
     animation-name: glow;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+}
+*/
+
+.loggo-span-container {
+    border: none;
+    display: inline;
+    padding: 5px;
+    position: fixed;
+    z-index: 5;
+    top: 48px;
+    left: 35px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(49, 104, 104);
+    box-shadow: 2px 2px 2px rgb(18, 48, 3);
+    animation: toRotatex 0.7s;
+}
+ 
+
+@keyframes toRotatex {
+    100%{
+        transform: rotateX(135deg);
+    }
+}
+
+.loggo-span2 {
+    font-size: 20px;
+    color: rgb(211, 211, 211);
+    font-weight: 800;
+    
+}
+
+.loggo-span2:hover {
+    font-size: 19px;
+}
+
+.designloggo {
+    color: rgb(132, 0, 0);
+}
+
+.deco-span {
+    color: lightseagreen;
+    font-weight: 600;
 }
 
 /*
@@ -70,6 +112,7 @@ body {
 .nav-bar {
     display: flex;
     padding: 3px 0px;
+    justify-content: center;
     align-items: center;
     background-color: rgba(6, 17, 26, 0.858);
     color: white;
@@ -127,7 +170,6 @@ body {
     100%{
         box-shadow: 2px 2px 2px lightseagreen, -2px -2px 2px lightseagreen;
     }
-
 }
 
 .hero-section-main button:hover {
@@ -164,7 +206,7 @@ body {
 /*====================Styles of about us section===================*/
 .about-us-main-section {
     padding: 20px;
-    width: 90%;
+    width: 88%;
     margin: auto;
 }
 
@@ -174,6 +216,7 @@ body {
     text-align: center;
     font-size: 28px;
     font-weight: 800;
+    text-decoration: overline;
     text-shadow: 5px 3px 3px navy;
 }
 
@@ -211,7 +254,7 @@ body {
 /*=========services and pricing START===============*/
 .service-pricing-main-section {
     border-radius: 5px;
-    width: 90%;
+    width: 84%;
     margin: 20px auto;
     padding: 50px;
     height: auto;
@@ -234,6 +277,7 @@ body {
     text-align: center;
     font-size: 23px;
     font-weight: 700;
+    text-decoration: overline;
     text-shadow: 5px 3px 3px navy;
 }
 
@@ -302,6 +346,7 @@ body {
     margin: 20px auto -10px;
     font-size: 22px;
     font-weight: 700;
+    text-decoration: overline;
     text-shadow: 5px 3px 3px navy;
 }
 
@@ -397,10 +442,12 @@ body {
     text-align: center;
     font-size: 22px;
     font-weight: 700;
+    text-decoration: overline;
     text-shadow: 5px 3px 3px navy;
 }
 
 .inside-sentences {
+    padding: 5px;
     width: 70%;
     margin: 10px auto;
 }
@@ -471,7 +518,6 @@ option {
     border: none;
     border-radius: 4px;
     background-color: rgb(6, 6, 62);
-    box-shadow: 2px 2px 3px black;
 }
 
 .appointment-form-section button:hover {
@@ -633,13 +679,6 @@ footer {
 
 
 @media(max-width: 1250px){
-    .loggo-span {
-        font-size: 18px;
-        color: navy;
-        font-weight: 800;
-        margin-left: 65px;
-    }
-
     .price-container {
         padding: 30px;
     }
@@ -693,10 +732,6 @@ footer {
         column-gap: 20px;
         row-gap: 20px;
         padding: 5px 15px;
-    }
-
-    .loggo-span {
-    display: none;
     }
 
 }
@@ -753,10 +788,6 @@ footer {
         font-size: 14px;
     }
 
-    .loggo-span {
-        display: none;
-    }
-
     .service-img {
         width: 150px;
         max-height: 130px;
@@ -788,14 +819,6 @@ footer {
          margin-top: 30px;
      }
      
-     .loggo-span {
-        display: block;
-        font-size: 16px;
-        color: navy;
-        font-weight: 800;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
 }
 
 
@@ -804,12 +827,7 @@ footer {
     .nav-links {
         display: none;
     }
-    .loggo-span {
-        font-size: 18px;
-        color: navy;
-        font-weight: 800;
-        margin-left: 150px;
-    }
+
     .bar-icon {
         font-size: 22px;
         position: absolute;
@@ -905,13 +923,6 @@ footer {
         column-gap: 15px;
     }
 
-    .loggo-span {
-        font-size: 18px;
-        color: navy;
-        font-weight: 800;
-        margin-left: 80px;
-    }
-
     .about-us-container {
         padding: 15px;
         display: flex;
@@ -932,13 +943,6 @@ footer {
         column-gap: 15px;
     }
 
-    .loggo-span {
-        font-size: 18px;
-        color: navy;
-        font-weight: 800;
-        margin-left: 80px;
-    }
-
     .hero-section-main {
          padding: 25px 5px;
          color: navy;
@@ -949,7 +953,196 @@ footer {
 
 
 @media(max-width: 450px){
+    /*
     .loggo-span {
         display: none;
+    }
+    */
+}
+
+
+@media(max-width: 410px){
+    .one-service {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        
+        top: 9px;
+        left: 12px;
+        right: 12px;
+        height: 35px;
+        
+        /*
+        width: 92%;
+        */
+    }
+
+    .service-pricing-main-section {
+        border-radius: 5px;
+        width: 88%;
+        margin: 20px auto;
+        padding: 7px;
+        height: auto;
+    }
+
+    .hero-section-main {
+        padding: 17px;
+        color: navy;
+        margin-top: 25px;
+        width: 88%;
+    }
+
+    .hero-section {
+        width: 80%;
+        margin-top: 30px;
+        padding: 8px 5px;
+        border-radius: 10px;
+        background-color: rgba(6, 7, 15, 0.799);
+        box-shadow: 2px 2px 2px black;
+        color: navy;
+    }
+
+    .hero-section span {
+        font-size: 1.8em;
+        font-weight: 800;
+        margin-bottom: 0px;
+        line-height: 48px;
+        text-shadow: 5px 3px 3px navy;
+    }
+
+    .hero-section h2 {
+        font-size: 1.2em;
+        margin-top: 18px;
+        line-height: 30px;
+        text-shadow: 4px 2px 3px navy;
+    }
+
+    .pricing-heading {
+        width: 300px;
+        margin: 15px auto;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        text-shadow: 5px 3px 3px navy;
+    }
+
+    .about-us-main-section {
+        padding: 5px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .about-us-heading {
+        width: 150px;
+        margin: -15px auto;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        text-shadow: 5px 3px 3px navy;
+    }
+
+    .image-div {
+        width: 85%;
+        height: 350px;
+        margin-top: -15px;
+    }
+
+    .gallery-heading {
+        padding: 2px;
+        width: 330px;
+        text-align: center;
+        margin: 20px auto -10px;
+        font-size: 22px;
+        font-weight: 700;
+        text-shadow: 5px 3px 3px navy;
+    }
+
+    .gallery-section {
+        width: 350px;
+        height: 300px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        border-radius: 5px;
+    }
+
+    .gallery-main-section button {
+        width: 40px;
+        height: 33px;
+        border-radius: 50%;
+        font-size: 20px;
+    }
+
+    .appointment-form-section {
+        width: 88%;
+        padding: 10px;
+    }
+
+    .appointment-main-section input {
+        padding: 6px 10px;
+        font-size: 14px;
+        font-weight: 500;
+        color: whitesmoke;
+        width: 230px;
+    }
+
+    .appointment-form-section button {
+        width: 260px;
+        padding: 6px 10px;
+        font-size: 14px;
+        font-weight: 600;
+        color: whitesmoke;
+        cursor: pointer;
+        margin-top: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: rgb(6, 6, 62);
+    }
+
+    select {
+        width: 250px;
+        padding: 6px 11px;
+        font-size: 14px;
+        font-weight: 500;
+        color: whitesmoke;
+        margin-top: 10px;
+        background-color: rgba(0, 0, 128, 0.281);
+        border: none;
+        border-radius: 5px;
+    }
+
+    option {
+        color: whitesmoke;
+        background-color: rgba(0, 0, 128, 0.281);
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 5px 10px;
+    }
+
+    .contact-us {
+        padding: 5px;
+        width: 295px;
+        border: none;
+    }
+
+    .working-hours {
+        width: 330px;
+        padding: 5px;
+        border: none;
+    }
+
+
+    .get-us-socialmedia {
+        padding: 5px;
+        display: flex;
+        width: 200px;
+        justify-content: center;
+        justify-content: space-between;
     }
 }
