@@ -7,6 +7,9 @@
     <title>Visit Our Barber</title>
     <!--=======Linking the styles=========-->
     <link rel="stylesheet" href="index.css">
+
+    ]
+    
      <!--=====icons from font awesome======-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -329,14 +332,17 @@
                 Need to reschedule? No problem! we’re flexible and happy to help.
             </p>
         </div>
-        <form action="" class="appointment-form-section">
-            <input type="text" placeholder="Your Full Names" name="" class="enter-name-input">
+        <form action="https://formsubmit.co/mtolofakude96@gmail.com" method="POST" class="appointment-form-section">
+            <!-- Anti-spam honeypot field -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="text" name="Full Name" placeholder="Your Full Names" class="enter-name-input" required>
             <br>
-            <input type="email" placeholder="Your Email" name="" id="" class="enter-email-input">
+            <input type="email" name="Email" placeholder="Your Email" class="enter-email-input" required>
             <br>
-            <input type="tel" placeholder="Your Phone Numbers" class="enter-phone-number">
+            <input type="tel" name="Phone Number" placeholder="Your Phone Numbers" class="enter-phone-number" required>
             <br>
-            <select name="" id="">
+            <select name="Service" required>
                 <option value="">Select Service</option>
                 <option value="male haircut">Male Haircut</option>
                 <option value="female haircut">Female Haircut</option>
@@ -346,10 +352,11 @@
                 <option value="nail designs">Nail Designs</option>
             </select>
             <br>
-            <input type="date" name="" id="" class="select-date">
+            <input type="date" name="Preferred Date" class="select-date" required>
             <br>
-            <button>Book Your Appointment</button>
+            <button type="submit">Book Your Appointment</button>
         </form>
+
     </div>
     <!--=====================Appointment section ENDS==============-->
     <!--==========================================================================================================-->
@@ -380,9 +387,6 @@
         
     </footer>
    
-
-
-
     
 <script src="index.js"></script>
 </body>

@@ -1145,4 +1145,17 @@ footer {
         justify-content: center;
         justify-content: space-between;
     }
+
+    .service-pricing-main-section {
+        border-radius: 5px;
+        width: 84%;
+        margin: 20px auto;
+        padding: 10px;
+        height: auto;
+        background: url(design/f3e24d37faf7feb883850faf90deec09.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: grayscale(15%);
+    }
 }
