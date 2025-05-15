@@ -676,6 +676,32 @@ footer {
 /*=================sideBar styles Ends==========*/
 
 
+/*=============Styles of the map section START============*/
+.map-section {
+    width: 85%;
+    padding: 5px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.map-section h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-shadow: 5px 3px 3px navy;
+}
+
+.map-section iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 255, 0.671);
+}
+
+.map-section iframe:hover {
+    filter: grayscale(70%);
+}
+/*=============Styles of the map section ENDS============*/
+
+
 
 
 @media(max-width: 1250px){
